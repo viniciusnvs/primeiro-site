@@ -1,0 +1,39 @@
+ a{
+    color:lightblue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration:underline;
+  }
+  
+  body {
+    background-image: url(https://img.elo7.com.br/product/zoom/26A45FE/papel-parede-skate-quarto-menino-jovem-lavavel-10m-ppj039-papel-de-parede-vinilico.jpg);
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh
+  }
+  
+  .menu {
+    background-color:;
+  }
+  
+  .menu li {
+    list-style:none;
+  }
+  .menu ul{
+    display:flex;
+    justify-content:space-around;
+  }
+  
+  
+  .site-title {
+    color:black;
+    text-align:center;  
+  }
+  
+  .site-subtitle {
+    color: whitesmoke;
+    text-align:center;  
+  }
+  
