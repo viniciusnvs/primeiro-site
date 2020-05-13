@@ -1,3 +1,11 @@
+/*soft reset do css*/
+
+ *{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ }
+
  a{
     color:lightblue;
     text-decoration: none;
@@ -8,14 +16,42 @@
   }
   
   body {
-    background-image: url(https://img.elo7.com.br/product/zoom/26A45FE/papel-parede-skate-quarto-menino-jovem-lavavel-10m-ppj039-papel-de-parede-vinilico.jpg);
+    background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
-    font-family: Arial;
-    height: 100vh
+    height: 100vh;
+    font-size: 12px;
   }
-  
+
+  /* se a tela tiver pelo menos 400 pixels vai carregar estes estilos*/
+  @media (min-width: 400px) {
+   body{
+     font-size: 14px;
+   }
+  }
+
+  @media (min-width: 600px) {
+    body{
+      font-size: 18 px;
+    }
+   }
+
+   
+  header{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  } 
+
   .menu {
-    background-color:;
+    background-color:grey;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  }
+  .menu a {
+     padding:10px 20px ;
+    display: block;
   }
   
   .menu li {
@@ -26,14 +62,24 @@
     justify-content:space-around;
   }
   
-  
   .site-title {
     color:black;
     text-align:center;  
+    font-size: 4em;
+    font-family: 'Abril Fatface', cursive;
   }
   
   .site-subtitle {
     color: whitesmoke;
-    text-align:center;  
+    text-align:center; 
+    font-family: 'Roboto Mono', monospace;
   }
-  
+   
+  .portfolio h2 {
+    font-family: 'Pangolin', cursive;
+  }
+
+  .img-portfolio {
+    width: 50px;
+    height: 50px;
+  }
